@@ -3,139 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donate Bangladesh</title>
+    <title>Blog Page</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
-    <header class="sticky top-0 bg-[#ffffffc0]">
-      <nav class="bg-[#F9F7F3] flex justify-around p-5">
-        <button class="bg-[#B4F461] px-8 py-3 text-sm font-semibold rounded-lg">
-          Blog
-        </button>
-        <div class="flex justify-center items-center gap-2">
-          <img src="assets/logo.png" alt="" />
-          <h2 class="font-semibold text-sm">Donate Bangladesh</h2>
+    <header>
+      <nav class="bg-[#ebe6dd] p-7 pb-14">
+        <div class="max-w-screen-lg mx-auto flex justify-between">
+          <button class="btn btn-outline btn-success px-6">Home</button>
+          <div class="hidden md:flex gap-4 justify-center items-center">
+            <img src="assets/logo.png" alt="" />
+            <h3 class="text-black font-semibold text-xl">Donate Bangladesh</h3>
+          </div>
+          <div
+            class="flex gap-3 justify-center items-center bg-[#fcf7ef] p-3 rounded-xl"
+          >
+            <img src="assets/coin.png" alt="" />
+            <h3 class="text-xl text-[#414040]">11100 BDT</h3>
+          </div>
         </div>
-        <button class="flex items-center gap-2 text-sm font-medium">
-          <img src="assets/coin.png" alt="" />5500 BDT
-        </button>
       </nav>
-
-      <!-- btn container -->
-      <div class="gap-4 flex justify-center">
-        <button class="btn btn-outline btn-success">Donation</button>
-        <button class="btn btn-outline btn-success">History</button>
-      </div>
     </header>
-    <main>
-      <!-- main container -->
-      <div class="max-w-screen-lg mx-auto my-10">
-        <!-- card container -->
-        <div class="border border-green-900 p-8">
-          <!-- 1st card -->
-          <div class="border border-red-600 flex gap-8 my-8">
-            <img src="assets/noakhali.png" alt="" />
-            <div>
-              <button class="bg-[#3d3d3d21] px-4 py-2 font-normal text-base">
-                0 BDT
-              </button>
-              <h3 class="gap-4 font-bold text-sm my-4">
-                Donate for Flood at Noakhali, Bangladesh
-              </h3>
-              <p class="text-base font-light my-4">
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+    <main class="max-w-screen-lg mx-auto p-3 lg:p-0">
+      <div class="flex justify-center gap-3 font-bold text-5xl mt-10">
+        <h1>Important FAQ</h1>
+        <div><i class="fa-solid fa-clipboard-question"></i></div>
+      </div>
+      <!-- FAQ section -->
+      <div class="mt-8">
+        <div class="join join-vertical w-full">
+          <!-- card 01 -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for
+                web documents. It represents the structure of an HTML or XML
+                document as a tree of objects, where each node in the tree
+                corresponds to part of the document (such as an element,
+                attribute, or text).
               </p>
-              <input
-                id="input_tag_1"
-                type="text"
-                placeholder="Write Donation Amount"
-                class="input input-bordered w-full mt-2 my-3"
-              />
-              <!-- <div class="flex justify-center bg-[#B4F461] py-2 rounded-lg" >
-              <button class="border border-yellow-400" >Donate Now</button>
-            </div> -->
-              <button
-                class="bg-[#B4F461] flex justify-center px-5 py-2 rounded-lg mx-auto"
-              >
-                Donate Now
-              </button>
             </div>
           </div>
-
-          <!-- 2st card -->
-          <div class="border border-red-600 flex gap-8 my-8">
-            <img src="assets/feni.png" alt="" />
-            <div>
-              <button class="bg-[#3d3d3d21] px-4 py-2 font-normal text-base">
-                0 BDT
-              </button>
-              <h3 class="gap-4 font-bold text-sm my-4">
-                Donate for Flood at Noakhali, Bangladesh
-              </h3>
-              <p class="text-base font-light my-4">
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+          <!-- card 02 -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element form the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                To select an element from the DOM, you use specific methods
+                provided by JavaScript that allow you to target elements based
+                on their attributes, such as ID, class, tag name, or more
+                complex CSS selectors
               </p>
-              <input
-                id="input_tag_1"
-                type="text"
-                placeholder="Write Donation Amount"
-                class="input input-bordered w-full mt-2 my-3"
-              />
-              <!-- <div class="flex justify-center bg-[#B4F461] py-2 rounded-lg" >
-             <button class="border border-yellow-400" >Donate Now</button>
-           </div> -->
-              <button
-                class="bg-[#B4F461] flex justify-center px-5 py-2 rounded-lg mx-auto"
-              >
-                Donate Now
-              </button>
             </div>
           </div>
-
-          <!-- 3st card -->
-          <div class="border border-red-600 flex gap-8">
-            <img src="assets/quota-protest.png" alt="" />
-            <div>
-              <button class="bg-[#3d3d3d21] px-4 py-2 font-normal text-base">
-                0 BDT
-              </button>
-              <h3 class="gap-4 font-bold text-sm my-4">
-                Donate for Flood at Noakhali, Bangladesh
-              </h3>
-              <p class="text-base font-light my-4">
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+          <!-- card 03 -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is Event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is when you add one event listener to a parent
+                element, and it handles events from all of its child elements.
+                It's helpful because you don't need to attach separate listeners
+                to each child, saving time and resources.
               </p>
-              <input
-                id="input_tag_1"
-                type="text"
-                placeholder="Write Donation Amount"
-                class="input input-bordered w-full mt-2 my-3"
-              />
-              <button
-                class="bg-[#B4F461] flex justify-center px-5 py-2 rounded-lg mx-auto"
-              >
-                Donate Now
-              </button>
+            </div>
+          </div>
+          <!-- card 04 -->
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                You can change an element's attributes using setAttribute() or
+                get them with getAttribute(). For styles, just update the style
+                property like element.style.color = "red" to change its look.
+              </p>
             </div>
           </div>
         </div>
