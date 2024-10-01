@@ -13,21 +13,23 @@
   </head>
   <body>
     <header class="sticky top-0 bg-[#ffffffc0] pb-2">
-      <nav class="bg-[#F9F7F3] flex justify-around p-5 pb-10">
-        <button class="bg-[#B4F461] px-8 py-3 text-lg font-semibold rounded-lg">
-          Blog
-        </button>
-        <div class="hidden lg:flex justify-center items-center gap-2">
-          <figure>
-            <img src="assets/logo.png" alt="" />
-          </figure>
-          <h2 class="font-semibold text-xl">Donate Bangladesh</h2>
-        </div>
-        <div class="flex items-center gap-2">
-          <img src="assets/coin.png" alt="" />
-          <button id="main-balance" class="text-lg font-medium">
-            5500 BDT
+      <nav class="bg-[#F9F7F3] p-5 pb-10">
+        <div class="max-w-screen-lg mx-auto flex justify-between">
+          <button id="blog-btn" class="bg-[#B4F461] px-8 py-3 text-lg font-semibold rounded-lg">
+            Blog
           </button>
+          <div class="hidden lg:flex justify-center items-center gap-2">
+            <figure>
+              <img src="assets/logo.png" alt="" />
+            </figure>
+            <h2 class="font-semibold text-xl">Donate Bangladesh</h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="assets/coin.png" alt="" />
+            <button id="main-balance" class="text-lg font-medium">
+              5500 BDT
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -46,7 +48,7 @@
           <!-- text part -->
           <div>
             <button
-              class="flex items-center gap-1 bg-[#3d3d3d21] px-1 py-2 font-normal text-base rounded-lg"
+              class="flex items-center gap-1 bg-[#3d3d3d21] px-1 py-2 font-normal text-base rounded-lg mt-2 lg:mt-0 "
             >
               <img src="assets/coin.png" alt="" />
               <h3 id="donate-amount-noakhali">0 BDT</h3>
@@ -83,7 +85,7 @@
           <img src="assets/feni.png" alt="" />
           <div>
             <button
-              class="flex items-center gap-1 bg-[#3d3d3d21] px-1 py-2 font-normal text-base rounded-lg"
+              class="flex items-center gap-1 bg-[#3d3d3d21] px-1 py-2 font-normal text-base rounded-lg mt-2 lg:mt-0"
             >
               <img src="assets/coin.png" alt="" />
               <h3 id="donate-amount-feni">0 BDT</h3>
@@ -122,7 +124,7 @@
           <img src="assets/quota-protest.png" alt="" />
           <div>
             <button
-              class="flex items-center gap-1 bg-[#3d3d3d21] px-1 py-2 font-normal text-base rounded-lg"
+              class="flex items-center gap-1 bg-[#3d3d3d21] px-1 py-2 font-normal text-base rounded-lg mt-2 lg:mt-0"
             >
               <img src="assets/coin.png" alt="" />
               <h3 id="donate-amount-movement">0 BDT</h3>
@@ -169,5 +171,7 @@
     <script src="js/home.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/blog-btn.js"></script>
+    
   </body>
 </html>
