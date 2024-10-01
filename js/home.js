@@ -16,6 +16,8 @@ document
       document.getElementById("donate-amount-noakhali").innerText =
         donateAmount + " BDT";
 
+      document.getElementById('modal-page').showModal();
+
       //**** History  Part ****
 
       const div = document.createElement("div");
@@ -56,6 +58,8 @@ document
       const donateAmount = feniDonate + donateBalance;
       document.getElementById("donate-amount-feni").innerText =
         donateAmount + " BDT";
+      
+      document.getElementById('modal-page').showModal();
 
       //**** History Part ****
       const div = document.createElement("div");
@@ -97,6 +101,8 @@ document
       const donateAmount = quotaMovementDonate + donateBalance;
       document.getElementById("donate-amount-movement").innerText =
         donateAmount + " BDT";
+
+      document.getElementById('modal-page').showModal();
 
       //**** History  Part ****
       const div = document.createElement("div");

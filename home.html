@@ -15,7 +15,10 @@
     <header class="sticky top-0 bg-[#ffffffc0] pb-2">
       <nav class="bg-[#F9F7F3] p-5 pb-10">
         <div class="max-w-screen-lg mx-auto flex justify-between">
-          <button id="blog-btn" class="bg-[#B4F461] px-8 py-3 text-lg font-semibold rounded-lg">
+          <button
+            id="blog-btn"
+            class="bg-[#B4F461] px-8 py-3 text-lg font-semibold rounded-lg"
+          >
             Blog
           </button>
           <div class="hidden lg:flex justify-center items-center gap-2">
@@ -35,8 +38,18 @@
 
       <!-- btn container -->
       <div class="gap-4 flex justify-center mt-8">
-        <button id="show-donation-btn" class="btn btn-outline btn-success text-lg font-semibold">Donation</button>
-        <button id="show-all-history" class="btn btn-outline btn-success text-lg font-semibold">History</button>
+        <button
+          id="show-donation-btn"
+          class="btn btn-outline btn-success text-lg font-semibold"
+        >
+          Donation
+        </button>
+        <button
+          id="show-all-history"
+          class="btn btn-outline btn-success text-lg font-semibold"
+        >
+          History
+        </button>
       </div>
     </header>
     <main>
@@ -48,7 +61,7 @@
           <!-- text part -->
           <div>
             <button
-              class="flex items-center gap-1 bg-[#3d3d3d21] px-1 py-2 font-normal text-base rounded-lg mt-2 lg:mt-0 "
+              class="flex items-center gap-1 bg-[#3d3d3d21] px-1 py-2 font-normal text-base rounded-lg mt-2 lg:mt-0"
             >
               <img src="assets/coin.png" alt="" />
               <h3 id="donate-amount-noakhali">0 BDT</h3>
@@ -81,7 +94,7 @@
         </div>
 
         <!-- 2st card -->
-        <div class="border border-gray-300  gap-8 my-8 p-6 rounded-xl lg:flex">
+        <div class="border border-gray-300 gap-8 my-8 p-6 rounded-xl lg:flex">
           <img src="assets/feni.png" alt="" />
           <div>
             <button
@@ -161,17 +174,34 @@
 
       <!-- History section start -->
       <div id="donate-history" class="max-w-screen-lg mx-auto hidden">
-        <h2 class="my-5 text-center text-xl bg-[#f5ead5] p-4">Donate History</h2>
-
+        <h2 class="my-5 text-center text-xl bg-[#f5ead5] p-4">
+          Donate History
+        </h2>
       </div>
-        
+
       <!-- History section end -->
+
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+      <dialog id="modal-page" class="modal">
+        <div class="modal-box">
+          <h3 class="text-2xl font-bold text-center">Congrats!</h3>
+          <img class="mx-auto mt-2" src="assets/coin.png" alt="">
+          <p class="py-4 text-center font-semibold">You Have Donated For HumanKind</p>
+          <h3 class="text-lg font-bold text-center">successfully</h3>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn font-semibold text-lg">close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
 
     <script src="js/home.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/features.js"></script>
     <script src="js/blog-btn.js"></script>
-    
   </body>
 </html>
