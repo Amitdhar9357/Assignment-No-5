@@ -33,13 +33,13 @@
 
       <!-- btn container -->
       <div class="gap-4 flex justify-center mt-8">
-        <button class="btn btn-outline btn-success">Donation</button>
-        <button id="show-all-history" class="btn btn-outline btn-success">History</button>
+        <button id="show-donation-btn" class="btn btn-outline btn-success text-lg font-semibold">Donation</button>
+        <button id="show-all-history" class="btn btn-outline btn-success text-lg font-semibold">History</button>
       </div>
     </header>
     <main>
       <!-- card container -->
-      <div class="max-w-screen-lg mx-auto my-10 p-3 lg:p-0">
+      <div id="card-container" class="max-w-screen-lg mx-auto my-10 p-3 lg:p-0">
         <!-- 1st card -->
         <div class="border border-gray-300 gap-8 my-8 p-6 rounded-xl lg:flex">
           <img src="assets/noakhali.png" alt="" />
@@ -156,9 +156,18 @@
           </div>
         </div>
       </div>
+
+      <!-- History section start -->
+      <div id="donate-history" class="max-w-screen-lg mx-auto hidden">
+        <h2 class="my-5 text-center text-xl bg-[#f5ead5] p-4">Donate History</h2>
+
+      </div>
+        
+      <!-- History section end -->
     </main>
 
     <script src="js/home.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>

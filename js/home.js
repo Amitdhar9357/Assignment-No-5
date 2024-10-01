@@ -16,7 +16,23 @@ document
       document.getElementById("donate-amount-noakhali").innerText =
         donateAmount + " BDT";
 
-      // History Notification Part ****
+      //**** History  Part ****
+
+      const div = document.createElement("div");
+      div.style.border = "2px solid #f2f2f2";
+      div.style.padding = "20px";
+      div.style.borderRadius = "8px";
+      div.style.marginBottom = "24px";
+      document.getElementById("donate-history").append(div);
+      const h2 = document.createElement("h2");
+      h2.innerText =
+        donateAmount +
+        "  Taka is Donated for famine-2024 at Noakhali , Bangladesh";
+      h2.style.fontSize = "2.5 rem";
+      h2.style.fontWeight = "700";
+      h2.style.marginBottom = "14px";
+      const p = new Date();
+      div.append(h2, p);
     } else {
       alert("Invalid Amount, Try Again");
     }
@@ -41,7 +57,21 @@ document
       document.getElementById("donate-amount-feni").innerText =
         donateAmount + " BDT";
 
-      // History Notification Part *
+      //**** History Part ****
+      const div = document.createElement("div");
+      div.style.border = "2px solid #f2f2f2";
+      div.style.padding = "20px";
+      div.style.borderRadius = "8px";
+      div.style.marginBottom = "24px";
+      document.getElementById("donate-history").append(div);
+      const h2 = document.createElement("h2");
+      h2.innerText =
+        donateAmount + " Taka is Donated for Flood Relief in Feni,Bangladesh";
+      h2.style.fontSize = "2.5 rem";
+      h2.style.fontWeight = "700";
+      h2.style.marginBottom = "14px";
+      const p = new Date();
+      div.append(h2, p);
     } else {
       alert("Invalid Amount, Try Again");
     }
@@ -67,6 +97,23 @@ document
       const donateAmount = quotaMovementDonate + donateBalance;
       document.getElementById("donate-amount-movement").innerText =
         donateAmount + " BDT";
+
+      //**** History  Part ****
+      const div = document.createElement("div");
+      div.style.border = "2px solid #f2f2f2";
+      div.style.padding = "20px";
+      div.style.borderRadius = "8px";
+      div.style.marginBottom = "24px";
+      document.getElementById("donate-history").append(div);
+      const h2 = document.createElement("h2");
+      h2.innerText =
+        donateAmount +
+        " Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh";
+      h2.style.fontSize = "2.5 rem";
+      h2.style.fontWeight = "700";
+      h2.style.marginBottom = "14px";
+      const p = new Date();
+      div.append(h2, p);
     } else {
       alert("Invalid Amount, Try Again");
     }
